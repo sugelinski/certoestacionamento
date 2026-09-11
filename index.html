@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Estacionamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sistema de Estacionamento</h1>
+  </header>
+
+  <div class="container">
+    <form id="clienteForm">
+      <h2>Cadastrar Cliente</h2>
+      <input type="text" id="nome" placeholder="Nome" required>
+      <input type="text" id="telefone" placeholder="Telefone" required>
+      <button type="submit">Cadastrar Cliente</button>
+    </form>
+
+    <form id="veiculoForm">
+      <h2>Cadastrar Veículo</h2>
+      <input type="text" id="placa" placeholder="Placa" required>
+      <input type="text" id="cor" placeholder="Cor" required>
+      <input type="text" id="modelo" placeholder="Modelo" required>
+      <input type="text" id="marca" placeholder="Marca">
+      <input type="number" id="ano" placeholder="Ano">
+      <select id="tipoPagamento" required>
+        <option value="">Selecione o tipo de pagamento</option>
+        <option value="hora">Por Hora</option>
+        <option value="diaria">Diária</option>
+        <option value="mensal">Mensal</option>
+      </select>
+      <button type="submit">Cadastrar Veículo</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
